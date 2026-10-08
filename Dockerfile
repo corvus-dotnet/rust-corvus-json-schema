@@ -1,4 +1,4 @@
-FROM rust:1.98-alpine3.22 AS build
+FROM rust:1.99-alpine3.22 AS build
 RUN apk add --no-cache musl-dev
 WORKDIR /usr/src/harness
 COPY Cargo.toml Cargo.lock build.rs ./
